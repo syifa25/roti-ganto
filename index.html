@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roti Ganto - Kelezatan Tradisional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #8b5e3c;
+      --secondary-color: #d4a373;
+      --bg-color: #fefae0;
+      --text-dark: #333;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Poppins', sans-serif; 
+      margin: 0; 
+      background: var(--bg-color); 
+      color: var(--text-dark); 
+      scroll-behavior: smooth;
+    }
+
+    header { 
+      background: var(--white); 
+      padding: 20px; 
+      text-align: center; 
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 { 
+      font-family: 'Playfair Display', serif; 
+      color: var(--primary-color);
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav { display: flex; justify-content: center; gap: 25px; margin-top: 15px; }
+    nav a { 
+      color: var(--text-dark); 
+      text-decoration: none; 
+      font-weight: 600; 
+      transition: 0.3s;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    nav a:hover { color: var(--primary-color); }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+    
+    h2 { 
+      text-align: center; 
+      font-family: 'Playfair Display', serif; 
+      font-size: 2rem; 
+      margin-bottom: 40px;
+      color: var(--primary-color);
+    }
+
+    .products { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+      gap: 30px; 
+    }
+
+    .card { 
+      background: var(--white); 
+      border-radius: 15px; 
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover { transform: translateY(-10px); }
+    
+    .card img { 
+      width: 100%; 
+      height: 250px; 
+      object-fit: cover; 
+    }
+
+    .card-content { padding: 20px; text-align: center; flex-grow: 1; }
+    .card h3 { margin: 10px 0; font-family: 'Playfair Display', serif; }
+    .card p { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+
+    .price { 
+      display: block; 
+      font-weight: 600; 
+      color: var(--primary-color); 
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+
+    .btn { 
+      background: var(--primary-color); 
+      color: var(--white); 
+      padding: 12px 25px; 
+      border: none; 
+      border-radius: 30px; 
+      cursor: pointer; 
+      font-weight: 600;
+      transition: 0.3s;
+      width: 100%;
+    }
+    .btn:hover { background: var(--secondary-color); }
+
+    /* Form Design */
+    .booking-section { background: var(--white); padding: 60px 0; }
+    form { 
+      max-width: 500px; 
+      margin: auto; 
+      padding: 30px;
+      border-radius: 15px;
+    }
+    
+    label { font-size: 0.8rem; font-weight: 600; color: #888; text-transform: uppercase; }
+    input, select, textarea { 
+      width: 100%; 
+      padding: 12px; 
+      margin: 8px 0 20px 0; 
+      border-radius: 8px; 
+      border: 1px solid #eee; 
+      background: #f9f9f9;
+      font-family: inherit;
+    }
+
+    footer { background: var(--primary-color); color: white; text-align: center; padding: 40px 20px; margin-top: 40px; }
+    .contact-info { margin-bottom: 20px; opacity: 0.9; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      nav { gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Roti Ganto</h1>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#pesan">Cara Pesan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 style="margin-bottom: 10px;">Freshly Baked Everyday</h2>
+    <p>Nikmati kelembutan roti legendaris dengan isian melimpah.</p>
+  </section>
+
+  <div class="container" id="produk">
+    <h2>Varian Favorit</h2>
+    <div class="products">
+      <div class="card">
+        <img src="img/Roti_Sarikaya.png" alt="Roti Srikaya">
+        <div class="card-content">
+          <h3>Roti Sarikaya</h3>
+          <p>Selai sarikaya khas yang manis, legit, dan bertekstur lembut.</p>
+          <span class="price">Rp 2.000</span>
+          <button class="btn" onclick="pilih('Srikaya')">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Roti_Coklat.png" alt="Roti Coklat">
+        <div class="card-content">
+          <h3>Roti Coklat</h3>
+          <p>Isian coklat premium yang lumer di mulut dalam setiap gigitan.</p>
+          <span class="price">Rp 2.000</span>
+          <button class="btn" onclick="pilih('Coklat')">Pesan Sekarang</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/Roti_Kelapa.png" alt="Roti Kelapa">
+        <div class="card-content">
+          <h3>Roti Kelapa</h3>
+          <p>Perpaduan gurihnya kelapa parut dan roti manis yang empuk.</p>
+          <span class="price">Rp 2.000</span>
+          <button class="btn" onclick="pilih('Kelapa')">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="booking-section" id="pesan">
+    <div class="container">
+      <h2>Pemesanan Cepat</h2>
+      <form onsubmit="kirimWA(event)">
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Masukkan nama Anda" required />
+        
+        <label>Pilih Varian</label>
+        <select id="produkSelect" required>
+            <option value="">-- Pilih Roti --</option>
+            <option value="Srikaya">Roti Sarikaya</option>
+            <option value="Coklat">Roti Coklat</option>
+            <option value="Kelapa">Roti Kelapa</option>
+        </select>
+        
+        <label>Jumlah Pesanan</label>
+        <input type="number" id="jumlah" min="1" placeholder="Contoh: 10" required />
+        
+        <label>Alamat Pengiriman</label>
+        <textarea id="alamat" rows="3" placeholder="Alamat lengkap (Kecamatan/Kota)" required></textarea>
+        <div id="totalBayar" style="font-weight: bold; color: #8b5e3c; margin-bottom: 20px;">
+            Estimasi Total: Rp 0
+        </div>
+        <button class="btn" type="submit">Konfirmasi via WhatsApp</button>
+        </form>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Lokasi Kami</h2>
+        <div style="width: 100%; border-radius: 15px; overflow: hidden; height: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.31024345!2d100.370!3d-0.900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNTQnMDAuMCJTIDEwMMKwMjInMTIuMCJF!5e0!3m2!1sid!2sid!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <footer id="kontak">
+        <div class="contact-info">
+        <p><strong>Lokasi:</strong> Jl. Padang, Kurao Pagang, Kec. Nanggalo, Kota Padang</p>
+        <p><strong>WhatsApp:</strong> 0852-6079-5979</p>
+        </div>
+        <p style="font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Roti Ganto. Dibuat dengan penuh rasa.</p>
+    </footer>
+
+        <script>
+        // 1. Fungsi untuk tombol "Pesan Sekarang" di kartu produk
+        function pilih(produk) {
+            document.getElementById('produkSelect').value = produk;
+            document.getElementById('pesan').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 2. Kodingan Hitung Otomatis (Ditaruh di luar agar langsung aktif)
+        const inputJumlah = document.getElementById('jumlah');
+        const displayTotal = document.getElementById('totalBayar');
+        const hargaRoti = 2000; // Sesuaikan dengan harga di kartu (Rp 2.000)
+
+        inputJumlah.addEventListener('input', function() {
+            const jumlah = parseInt(this.value);
+            if (jumlah > 0) {
+                const total = jumlah * hargaRoti;
+                displayTotal.innerText = `Estimasi Total: Rp ${total.toLocaleString('id-ID')}`;
+            } else {
+                displayTotal.innerText = `Estimasi Total: Rp 0`;
+            }
+        });
+
+        // 3. Fungsi Kirim Data ke WhatsApp
+        function kirimWA(e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const produk = document.getElementById('produkSelect').value;
+            const jumlah = document.getElementById('jumlah').value;
+            const alamat = document.getElementById('alamat').value;
+            
+            // Hitung total untuk dikirim ke pesan WA
+            const totalHarga = jumlah * hargaRoti;
+
+            const noWA = '6285260795979';
+            const pesan = `Halo Roti Ganto, saya ingin memesan:%0A%0A` +
+                        `*Nama:* ${nama}%0A` +
+                        `*Produk:* Roti ${produk}%0A` +
+                        `*Jumlah:* ${jumlah} pcs%0A` +
+                        `*Total Harga:* Rp ${totalHarga.toLocaleString('id-ID')}%0A` +
+                        `*Alamat:* ${alamat}%0A%0A` +
+                        `Mohon segera diproses ya, terima kasih!`;
+
+            window.open(`https://wa.me/${noWA}?text=${pesan}`, '_blank');
+        }
+    </script>
+</body>
+</html>
