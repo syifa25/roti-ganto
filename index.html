@@ -208,9 +208,9 @@
             <div class="card-content">
             <h3>Donat</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlDonat', -1)">-</button>
+                <span class="qty-number" id="displayDonat">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlDonat', 1)">+</button>
             </div>
             </div>
         </div>
@@ -219,9 +219,9 @@
             <div class="card-content">
             <h3>Roti Blueberry</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlBlueberry', -1)">-</button>
+                <span class="qty-number" id="displayBlueberry">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlBlueberry', 1)">+</button>
             </div>
             </div>
         </div>
@@ -230,9 +230,9 @@
             <div class="card-content">
             <h3>Roti Kacang Ijo Gepeng</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlKacangIjo', -1)">-</button>
+                <span class="qty-number" id="displayKacangIjo">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlKacangIjo', 1)">+</button>
             </div>
             </div>
         </div>
@@ -241,9 +241,9 @@
             <div class="card-content">
             <h3>Roti Keju</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlKeju', -1)">-</button>
+                <span class="qty-number" id="displayKeju">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlKeju', 1)">+</button>
             </div>
             </div>
         </div>
@@ -252,9 +252,9 @@
             <div class="card-content">
             <h3>Roti Nanas</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlNanas', -1)">-</button>
+                <span class="qty-number" id="displayNanas">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlNanas', 1)">+</button>
             </div>
             </div>
         </div>
@@ -263,9 +263,9 @@
             <div class="card-content">
             <h3>Roti Sosis</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlSosis', -1)">-</button>
+                <span class="qty-number" id="displaySosis">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlSosis', 1)">+</button>
             </div>
             </div>
         </div>
@@ -274,9 +274,9 @@
             <div class="card-content">
             <h3>Roti Stroberi</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlStroberi', -1)">-</button>
+                <span class="qty-number" id="displayStroberi">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlStroberi', 1)">+</button>
             </div>
             </div>
         </div>
@@ -285,9 +285,9 @@
             <div class="card-content">
             <h3>Roti Tawar</h3>
             <div class="quantity-control">
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', -1)">-</button>
-                <span class="qty-number" id="displaySrikaya">0</span>
-                <button class="btn-qty" onclick="updateQty('jmlSrikaya', 1)">+</button>
+                <button class="btn-qty" onclick="updateQty('jmlTawar', -1)">-</button>
+                <span class="qty-number" id="displayTawar">0</span>
+                <button class="btn-qty" onclick="updateQty('jmlTawar', 1)">+</button>
             </div>
             </div>
         </div>                                                           
@@ -346,10 +346,18 @@
             <label>Email</label>
             <input type="email" id="email" placeholder="alamat@email.com" required />
 
-            <label>Rincian Pesanan (Rp 1.500/pcs)</label>
+            <label>Rincian Pesanan</label>
             <input type="hidden" id="jmlCoklat" value="0">
             <input type="hidden" id="jmlKelapa" value="0">
             <input type="hidden" id="jmlSrikaya" value="0">
+            <input type="hidden" id="jmlBlueberry" value="0">
+            <input type="hidden" id="jmlDonat" value="0">
+            <input type="hidden" id="jmlKacangIjo" value="0">
+            <input type="hidden" id="jmlKeju" value="0">
+            <input type="hidden" id="jmlNanas" value="0">
+            <input type="hidden" id="jmlSosis" value="0">
+            <input type="hidden" id="jmlTawar" value="0">
+            <input type="hidden" id="jmlStroberi" value="0">
 
             <div id="ringkasanPesanan" style="font-size: 0.9rem; color: #555; margin-bottom: 10px;">
                 Belum ada produk yang dipilih.
@@ -411,22 +419,15 @@
     </footer>
 
     <script>
-        let hargaSekarang = 2000; // Default harga umum
+        let hargaSekarang = 2000; 
 
         function updateHargaDasar() {
-            // Ambil nilai dari radio button yang dipilih
             const kategori = document.querySelector('input[name="kategori"]:checked').value;
-            
-            // Set harga sesuai kategori
             hargaSekarang = (kategori === "Mitra") ? 1700 : 2000;
-            
-            // Update tampilan harga di card produk (opsional tapi bagus untuk user)
             const labelHarga = document.querySelectorAll('.price');
             labelHarga.forEach(el => {
                 el.innerText = `Rp ${hargaSekarang.toLocaleString('id-ID')}`;
             });
-
-            // Hitung ulang total
             hitungTotal();
         }
 
@@ -434,10 +435,17 @@
             const c = parseInt(document.getElementById('jmlCoklat').value) || 0;
             const k = parseInt(document.getElementById('jmlKelapa').value) || 0;
             const s = parseInt(document.getElementById('jmlSrikaya').value) || 0;
+            const b = parseInt(document.getElementById('jmlBlueberry').value) || 0;
+            const d = parseInt(document.getElementById('jmlDonat').value) || 0;
+            const ki = parseInt(document.getElementById('jmlKacangIjo').value) || 0;
+            const ke = parseInt(document.getElementById('jmlKeju').value) || 0;
+            const n = parseInt(document.getElementById('jmlNanas').value) || 0;
+            const so = parseInt(document.getElementById('jmlSosis').value) || 0;
+            const t = parseInt(document.getElementById('jmlTawar').value) || 0;
+            const st = parseInt(document.getElementById('jmlStroberi').value) || 0;
+
+            const total = (c + k + s + b + d + ki + ke + n + so + t + st) * hargaSekarang;
             
-            const total = (c + k + s) * hargaSekarang;
-            
-            // Update elemen Total Bayar (pastikan ID nya unik, di HTML kamu ada dua ID totalBayar, hapus salah satu)
             const elemenTotal = document.querySelectorAll('#totalBayar');
             elemenTotal.forEach(el => {
                 el.innerText = `Estimasi Total: Rp ${total.toLocaleString('id-ID')}`;
@@ -448,11 +456,27 @@
             const c = parseInt(document.getElementById('jmlCoklat').value) || 0;
             const k = parseInt(document.getElementById('jmlKelapa').value) || 0;
             const s = parseInt(document.getElementById('jmlSrikaya').value) || 0;
+            const b = parseInt(document.getElementById('jmlBlueberry').value) || 0;
+            const d = parseInt(document.getElementById('jmlDonat').value) || 0;
+            const ki = parseInt(document.getElementById('jmlKacangIjo').value) || 0;
+            const ke = parseInt(document.getElementById('jmlKeju').value) || 0;
+            const n = parseInt(document.getElementById('jmlNanas').value) || 0;
+            const so = parseInt(document.getElementById('jmlSosis').value) || 0;
+            const t = parseInt(document.getElementById('jmlTawar').value) || 0;
+            const st = parseInt(document.getElementById('jmlStroberi').value) || 0;
             
             let item = [];
             if (c > 0) item.push(`${c} Coklat`);
             if (k > 0) item.push(`${k} Kelapa`);
             if (s > 0) item.push(`${s} Srikaya`);
+            if (b > 0) item.push(`${b} Blueberry`);
+            if (d > 0) item.push(`${d} Donat`);
+            if (ki > 0) item.push(`${ki} KacangIjo`);
+            if (ke > 0) item.push(`${ke} Keju`);
+            if (n > 0) item.push(`${n} Nanas`);
+            if (so > 0) item.push(`${so} Sosis`);
+            if (t > 0) item.push(`${t} Tawar`);
+            if (st > 0) item.push(`${st} Stroberi`);
             
             document.getElementById('ringkasanPesanan').innerText = item.length > 0 
                 ? `Pesanan: ${item.join(", ")}` 
@@ -478,19 +502,35 @@
             const c = document.getElementById('jmlCoklat').value;
             const k = document.getElementById('jmlKelapa').value;
             const s = document.getElementById('jmlSrikaya').value;
+            const b = document.getElementById('jmlBlueberry').value;
+            const d = document.getElementById('jmlDonat').value;
+            const ki = document.getElementById('jmlKacangIjo').value;
+            const ke = document.getElementById('jmlKeju').value;
+            const n = document.getElementById('jmlNanas').value;
+            const so = document.getElementById('jmlSosis').value;
+            const t = document.getElementById('jmlTawar').value;
+            const st = document.getElementById('jmlStroberi').value;
 
-            if ((parseInt(c) + parseInt(k) + parseInt(s)) === 0) {
+            if ((parseInt(c) + parseInt(k) + parseInt(s) + parseInt(b) + parseInt(d) + parseInt(ki) + parseInt(ke) + parseInt(n) + parseInt(so) + parseInt(t) + parseInt(st)) === 0) {
                 alert("Silakan pilih minimal 1 roti!");
                 return;
             }
 
-            const totalFinal = (parseInt(c) + parseInt(k) + parseInt(s)) * hargaSekarang;
+            const totalFinal = (parseInt(c) + parseInt(k) + parseInt(s) + parseInt(b) + parseInt(d) + parseInt(ki) + parseInt(ke) + parseInt(n) + parseInt(so) + parseInt(t) + parseInt(st)) * hargaSekarang;
             const noOwner = '6285260795979';
             
             let rincian = "";
             if (c > 0) rincian += `- Coklat: ${c} pcs\n`;
             if (k > 0) rincian += `- Kelapa: ${k} pcs\n`;
             if (s > 0) rincian += `- Srikaya: ${s} pcs\n`;
+            if (b > 0) rincian += `- Blueberry: ${b} pcs\n`;
+            if (d > 0) rincian += `- Donat: ${d} pcs\n`;
+            if (ki > 0) rincian += `- Kacang Ijo: ${ki} pcs\n`;
+            if (ke > 0) rincian += `- Keju: ${ke} pcs\n`;
+            if (n > 0) rincian += `- Nanas: ${n} pcs\n`;
+            if (so > 0) rincian += `- Sosis: ${so} pcs\n`;
+            if (t > 0) rincian += `- Tawar: ${t} pcs\n`;
+            if (st > 0) rincian += `- Stroberi: ${st} pcs\n`;
 
             const pesan = `Halo Roti Ganto, Pesanan Baru!\n\n` +
                         `*Kategori:* ${kategori}\n` +
